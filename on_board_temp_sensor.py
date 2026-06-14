@@ -3,7 +3,7 @@ import time
 from ota import OTAUpdater
 from WIFI_CONFIG import SSID, PASSWORD
 
-# version 1
+# version 2
 
 # Check for updates
 firmware_url = "https://raw.githubusercontent.com/Tolnari/pico-ota-testing/"
@@ -26,5 +26,4 @@ while True:
 	time.sleep(1)
 	print(f"farenheit {round(temperature * (9/5) + 32, 1)}")
 	print(f"Celcius   {temperature}")
-	print()
 	time.sleep(4)
