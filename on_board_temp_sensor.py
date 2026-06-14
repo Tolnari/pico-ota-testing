@@ -3,6 +3,8 @@ import time
 from ota import OTAUpdater
 from WIFI_CONFIG import SSID, PASSWORD
 
+# version 1
+
 # Check for updates
 firmware_url = "https://raw.githubusercontent.com/Tolnari/pico-ota-testing/"
 ota_updater = OTAUpdater(SSID, PASSWORD,firmware_url, "on_board_temp_sensor.py")
