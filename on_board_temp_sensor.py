@@ -5,7 +5,7 @@ from WIFI_CONFIG import SSID, PASSWORD
 
 # Check for updates
 firmware_url = "https://raw.githubusercontent.com/Tolnari/pico-ota-testing/"
-ota_updater = OTAUpdater(SSID, PASSWORD,firmware_url, "onboard_temp_sensor.py")
+ota_updater = OTAUpdater(SSID, PASSWORD,firmware_url, "on_board_temp_sensor.py")
 ota_updater.download_and_install_update_if_available()
 
 # Do python things
