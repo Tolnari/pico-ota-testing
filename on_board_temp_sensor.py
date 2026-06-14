@@ -13,7 +13,6 @@ ota_updater.download_and_install_update_if_available()
 adcpin = 4
 sensor = machine.ADC(adcpin)
 
-# add a comment
 def ReadTemperature():
 	adc_value = sensor.read_u16()
 	volt = (3.3/65535) * adc_value
@@ -25,4 +24,5 @@ while True:
 	time.sleep(1)
 	print(f"farenheit {round(temperature * (9/5) + 32, 1)}")
 	print(f"Celcius   {temperature}")
+	print()
 	time.sleep(4)
